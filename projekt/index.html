@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dekoliyah – Exklusive Hochzeitsdekoration</title>
-  <meta name="description" content="Exklusive Hochzeitsdekoration mit Stil, Eleganz und Liebe zum Detail." />
+  <title>Dekoliyah – Hochzeitsdesign & Mietartikel</title>
+  <meta name="description" content="Exklusive Hochzeitsdekoration und hochwertige Mietartikel." />
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -16,83 +15,205 @@
 
 <header class="hero">
   <nav class="nav">
-    <div class="logo">DEKOLIYAH</div>
+    <a class="brand" href="#top">
+      <img
+        class="brand-logo"
+        src="assets/logo_weiß.png"
+        data-logo-light="assets/logo_weiß.png"
+        data-logo-dark="assets/logo_schwarz.png"
+        alt="Dekoliyah Decoration Logo"
+      />
+    </a>
+
+    <button class="burger">
+      <span></span><span></span><span></span>
+    </button>
+
     <div class="nav-links">
       <a href="#about">Über uns</a>
       <a href="#services">Leistungen</a>
+      <a href="#artikel">Artikel</a>
       <a href="#gallery">Galerie</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Kontakt</a>
     </div>
   </nav>
 
-  <div class="hero-content">
-    <h1>Exklusive Hochzeitsdekoration</h1>
-    <p>Ästhetik. Eleganz. Emotion.</p>
-    <a href="#contact" class="btn-primary">Jetzt anfragen</a>
+  <div class="hero-content" id="top">
+    <h1>Exklusive Hochzeitsästhetik</h1>
+    <p>Eventdesign. Eventdekoration. Floristik.</p>
   </div>
 </header>
 
+<!-- ABOUT -->
 <section id="about" class="section">
-  <div class="container narrow">
-    <h2>Über Dekoliyah</h2>
-    <p>
-      Wir gestalten unvergessliche Hochzeiten mit einem Gespür für Design,
-      Harmonie und Liebe zum Detail. Jedes Konzept ist individuell,
-      stilvoll und perfekt abgestimmt.
-    </p>
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="assets/about.jpg" alt="">
+    </div>
+    <div class="about-text">
+      <h2>Über Dekoliyah</h2>
+      <p>Wir gestalten Hochzeiten mit einem Gespür für Raum, Licht und zeitlose Eleganz.</p>
+      <p>Jedes Detail wird bewusst gewählt – reduziert, stilvoll und harmonisch.</p>
+    </div>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services" class="section light">
   <div class="container">
     <h2>Leistungen</h2>
 
-    <div class="grid-3">
-      <div class="card">
-        <h3>Dekorationskonzepte</h3>
-        <p>Individuelle Designkonzepte für eure Traumhochzeit.</p>
-      </div>
-      <div class="card">
-        <h3>Floristik</h3>
-        <p>Exklusive Blumenarrangements mit Stil und Eleganz.</p>
-      </div>
-      <div class="card">
-        <h3>Komplettbetreuung</h3>
-        <p>Von der Planung bis zum Aufbau – alles aus einer Hand.</p>
-      </div>
+  <div class="grid-3 services-grid">
+
+  <div class="card">
+    <img src="assets/tablesetting.jpg" alt="">
+    <h3>Eventdesign</h3>
+    <p>Ästhetische Raum- und Tischkonzepte.</p>
+  </div>
+
+  <div class="card">
+    <img src="assets/dekotuch.jpg" alt="">
+    <h3>Floristik</h3>
+    <p>Fein abgestimmte Blumenarrangements.</p>
+  </div>
+
+  <div class="card">
+    <img src="assets/bride.jpg" alt="">
+    <h3>Komplettbetreuung</h3>
+    <p>Von Planung bis Aufbau – alles aus einer Hand.</p>
+  </div>
     </div>
   </div>
 </section>
 
-<section id="gallery" class="section">
+<!-- ARTIKEL -->
+<section id="artikel" class="section">
+  <div class="container">
+    <h2>Artikel</h2>
+
+   <div class="grid-3 artikel-grid">
+
+  <div class="card">
+    <img src="assets/tischdeko.jpg" alt="">
+    <h3>Tischgestaltung</h3>
+  </div>
+
+  <div class="card">
+    <img src="assets/deco_outside.jpg" alt="">
+    <h3>Outdoor Dekor</h3>
+  </div>
+
+  <div class="card">
+    <img src="assets/tablesetting_light.jpg" alt="">
+    <h3>Detail Elemente</h3>
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section id="gallery" class="section light">
   <div class="container">
     <h2>Galerie</h2>
 
-    <div class="gallery">
-      <div class="gallery-item"></div>
-      <div class="gallery-item"></div>
-      <div class="gallery-item"></div>
-      <div class="gallery-item"></div>
+<div class="gallery-wall">
+
+  <div class="gallery-item large">
+    <img src="assets/couple.jpg" alt="">
+  </div>
+
+  <div class="gallery-item">
+    <img src="assets/blackwhite_couple.jpg" alt="">
+  </div>
+
+  <div class="gallery-item tall">
+    <img src="assets/bride.jpg" alt="">
+  </div>
+
+  <div class="gallery-item">
+    <img src="assets/about.jpg" alt="">
+  </div>
+
+  <div class="gallery-item wide">
+    <img src="assets/tablesetting.jpg" alt="">
+  </div>
+
+  <div class="gallery-item">
+    <img src="assets/dekotuch.jpg" alt="">
+  </div>
+
+  <div class="gallery-item">
+    <img src="assets/tischdeko.jpg" alt="">
+  </div>
+
+</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container narrow">
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+      <h4>Wie läuft eine Anfrage ab?</h4>
+      <p>Nach eurer Anfrage vereinbaren wir ein unverbindliches Erstgespräch.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Arbeitet ihr deutschlandweit?</h4>
+      <p>Ja, wir realisieren Projekte bundesweit.</p>
     </div>
   </div>
 </section>
 
-<section id="contact" class="section light">
+<!-- STORIES -->
+<section class="section light">
+  <div class="container">
+    <h2>Captured Love Stories</h2>
+
+    <div class="stories-grid">
+      <img src="assets/couple.jpg">
+      <img src="assets/blackwhite_couple.jpg">
+      <img src="assets/bride.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- REFERENZEN -->
+<section class="section">
+  <div class="container narrow">
+    <h2>Referenzen</h2>
+    <p class="testimonial">
+      „Dekoliyah hat unsere Hochzeit in ein ästhetisches Meisterwerk verwandelt.“
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
   <div class="container narrow">
     <h2>Kontakt</h2>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="email" name="email" placeholder="E-Mail" required />
-      <textarea name="message" placeholder="Nachricht" rows="5" required></textarea>
+    <form action="#" class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="E-Mail" required>
+      <textarea rows="5" placeholder="Nachricht" required></textarea>
       <button type="submit" class="btn-primary">Anfrage senden</button>
     </form>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 Dekoliyah – Hochzeitsdekoration</p>
+  <img src="assets/logo_schwarz.png" class="footer-logo">
+  <p>© 2026 Dekoliyah | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+  <p class="design-credit">Design by VN DESIGN</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
