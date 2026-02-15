@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dekoliyah – Hochzeitsdesign & Mietartikel</title>
+  <title>Dekoliyah – Eventdesign & Mietartikel</title>
   <meta name="description" content="Exklusive Hochzeitsdekoration und hochwertige Mietartikel." />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo_schwarz.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo_schwarz.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logo_schwarz.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -29,14 +33,21 @@
       <span></span><span></span><span></span>
     </button>
 
-    <div class="nav-links">
-      <a href="#about">Über uns</a>
-      <a href="#services">Leistungen</a>
-      <a href="#artikel">Artikel</a>
-      <a href="#gallery">Galerie</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Kontakt</a>
-    </div>
+   <div class="nav-links">
+
+  <button class="menu-close" aria-label="Menü schließen">
+    &times;
+  </button>
+
+  <a href="#about">Über uns</a>
+  <a href="#services">Leistungen</a>
+  <a href="#artikel">Artikel</a>
+  <a href="#gallery">Galerie</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Kontakt</a>
+
+</div>
+
   </nav>
 
   <div class="hero-content" id="top">
@@ -46,135 +57,257 @@
 </header>
 
 <!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container about-grid">
+<section id="about" class="section about">
+  <div class="about-grid">
+
     <div class="about-image">
-      <img src="assets/about.jpg" alt="">
+      <img src="assets/about.jpg" alt="Dekoliyah About">
     </div>
-    <div class="about-text">
-      <h2>Über Dekoliyah</h2>
-      <p>Wir gestalten Hochzeiten mit einem Gespür für Raum, Licht und zeitlose Eleganz.</p>
-      <p>Jedes Detail wird bewusst gewählt – reduziert, stilvoll und harmonisch.</p>
+
+    <div class="about-content">
+      <span class="about-eyebrow">ABOUT —</span>
+      <h2>HI, ICH BIN SIRIN</h2>
+
+      <p>
+        Ich liebe es, Räume in emotionale Erlebnisse zu verwandeln.
+        Mit einem feinen Gespür für Ästhetik, Materialien und Licht
+        kreiere ich Hochzeitskonzepte, die zeitlos, elegant und
+        persönlich sind.
+      </p>
+
+      <p>
+        Jede Hochzeit erzählt eine eigene Geschichte – meine Aufgabe
+        ist es, diese visuell erlebbar zu machen. Reduziert, stilvoll
+        und mit einem hohen Anspruch an Design.
+      </p>
     </div>
+
   </div>
 </section>
+
 
 <!-- SERVICES -->
-<section id="services" class="section light">
-  <div class="container">
-    <h2>Leistungen</h2>
+<section id="services" class="section services-section light">
+  <div class="container services-intro">
+    <h2>MEINE LEISTUNGEN</h2>
+    <p>
+     Für mich beginnt alles damit, euch als Paar wirklich kennenzulernen – eure Persönlichkeit, eure Vorstellungen und das Gefühl, das euer Tag tragen soll. Eine vertrauensvolle Verbindung bildet dabei die Grundlage für eine harmonische und erfolgreiche Planung.
 
-  <div class="grid-3 services-grid">
-
-  <div class="card">
-    <img src="assets/tablesetting.jpg" alt="">
-    <h3>Eventdesign</h3>
-    <p>Ästhetische Raum- und Tischkonzepte.</p>
+Ob umfassende Begleitung oder gezielte Unterstützung in einzelnen Bereichen – in einem persönlichen Gespräch finden wir gemeinsam heraus, was am besten zu euch passt.
+    </p>
   </div>
 
-  <div class="card">
-    <img src="assets/dekotuch.jpg" alt="">
-    <h3>Floristik</h3>
-    <p>Fein abgestimmte Blumenarrangements.</p>
-  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-image">
+        <img src="assets/couple.jpg" alt="Gesamtplanung" />
+      </div>
+      <div class="service-content">
+        <h3>GESAMT-<br>PLANUNG</h3>
+        <div class="service-footer">
+          <span>Details</span>
+          <span class="plus">+</span>
+        </div>
+      </div>
+    </div>
 
-  <div class="card">
-    <img src="assets/bride.jpg" alt="">
-    <h3>Komplettbetreuung</h3>
-    <p>Von Planung bis Aufbau – alles aus einer Hand.</p>
-  </div>
+    <div class="service-card">
+      <div class="service-image">
+        <img src="assets/tablesetting.jpg" alt="Design und Dekokonzept" />
+      </div>
+      <div class="service-content">
+        <h3>DESIGN- UND<br>DEKOKONZEPT</h3>
+        <div class="service-footer">
+          <span>Details</span>
+          <span class="plus">+</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-image">
+        <img src="assets/tischdeko.jpg" alt="Dienstleistervermittlung" />
+      </div>
+      <div class="service-content">
+        <h3>DIENSTLEISTER-<br>VERMITTLUNG</h3>
+        <div class="service-footer">
+          <span>Details</span>
+          <span class="plus">+</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- ARTIKEL -->
 <section id="artikel" class="section">
   <div class="container">
-    <h2>Artikel</h2>
 
-   <div class="grid-3 artikel-grid">
+    <h2>ARTIKEL</h2>
 
-  <div class="card">
-    <img src="assets/tischdeko.jpg" alt="">
-    <h3>Tischgestaltung</h3>
-  </div>
+    <p class="section-intro">
+      AUSGEWÄHLTE ELEMENTE FÜR EIN HARMONISCHES GESAMTBILD.
+      REDUZIERT. ZEITLOS. HOCHWERTIG.
+    </p>
 
-  <div class="card">
-    <img src="assets/deco_outside.jpg" alt="">
-    <h3>Outdoor Dekor</h3>
-  </div>
+    <div class="leistungen-grid">
 
-  <div class="card">
-    <img src="assets/tablesetting_light.jpg" alt="">
-    <h3>Detail Elemente</h3>
-  </div>
+      <div class="leistung-item">
+        <img src="assets/tablesetting.jpg" alt="Tischgestaltung">
+        <h3>TISCHGESTALTUNG</h3>
+        <span>Details</span>
+      </div>
 
-</div>
+      <div class="leistung-item">
+        <img src="assets/deco_outside.jpg" alt="Outdoor Dekor">
+        <h3>OUTDOOR DEKOR</h3>
+        <span>Details</span>
+      </div>
 
+      <div class="leistung-item">
+        <img src="assets/tischdeko.jpg" alt="Detail Elemente">
+        <h3>DETAIL ELEMENTE</h3>
+        <span>Details</span>
+      </div>
+
+    </div>
 
   </div>
 </section>
+
+
 
 <!-- GALERIE -->
 <section id="gallery" class="section light">
   <div class="container">
-    <h2>Galerie</h2>
+    <h2>GALERIE</h2>
 
-<div class="gallery-wall">
+    <div class="gallery-grid">
 
-  <div class="gallery-item large">
-    <img src="assets/couple.jpg" alt="">
-  </div>
+      <div class="gallery-item tall">
+        <img src="assets/bride.jpg" alt="">
+      </div>
 
-  <div class="gallery-item">
-    <img src="assets/blackwhite_couple.jpg" alt="">
-  </div>
+      <div class="gallery-item">
+        <img src="assets/couple.jpg" alt="">
+      </div>
 
-  <div class="gallery-item tall">
-    <img src="assets/bride.jpg" alt="">
-  </div>
+      <div class="gallery-item wide">
+        <img src="assets/tablesetting.jpg" alt="">
+      </div>
 
-  <div class="gallery-item">
-    <img src="assets/about.jpg" alt="">
-  </div>
+      <div class="gallery-item">
+        <img src="assets/blackwhite_couple.jpg" alt="">
+      </div>
 
-  <div class="gallery-item wide">
-    <img src="assets/tablesetting.jpg" alt="">
-  </div>
+      <div class="gallery-item tall">
+        <img src="assets/deco_outside.jpg" alt="">
+      </div>
 
-  <div class="gallery-item">
-    <img src="assets/dekotuch.jpg" alt="">
-  </div>
+      <div class="gallery-item">
+        <img src="assets/tischdeko.jpg" alt="">
+      </div>
 
-  <div class="gallery-item">
-    <img src="assets/tischdeko.jpg" alt="">
-  </div>
+      <div class="gallery-item">
+        <img src="assets/couple_sofa.jpg" alt="">
+      </div>
 
-</div>
+      <div class="gallery-item">
+        <img src="assets/tablesetting_light.jpg" alt="">
+      </div>
+
+    </div>
   </div>
 </section>
+
 
 <!-- FAQ -->
-<section id="faq" class="section">
+<section id="faq" class="section faq-section light">
   <div class="container narrow">
-    <h2>FAQ</h2>
 
-    <div class="faq-item">
-      <h4>Wie läuft eine Anfrage ab?</h4>
-      <p>Nach eurer Anfrage vereinbaren wir ein unverbindliches Erstgespräch.</p>
+    <p class="faq-label">FAQ</p>
+    <h2>Falls du dich noch<br>etwas fragen solltest …</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Begleitest du Hochzeiten deutschlandweit?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Der Fokus liegt auf Hochzeiten in Norddeutschland.
+            Sehr gerne begleite ich jedoch auch Feiern in ganz Deutschland oder im Ausland.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Wie gestaltet sich die Zusammenarbeit?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Nach einem unverbindlichen Kennenlernen entwickeln wir ein individuelles Konzept.
+            Von der ersten Idee bis zur finalen Umsetzung begleite ich euch mit einem klaren,
+            strukturierten Ablauf.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Arbeitest du mit festen Partnern?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Ich verfüge über ein sorgfältig kuratiertes Netzwerk aus erfahrenen Dienstleistern.
+            Selbstverständlich berücksichtige ich auch eure eigenen Wünsche und Kontakte.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Wie setzen sich die Preise zusammen?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Jede Hochzeit ist einzigartig. Der Umfang, die Location und eure individuellen
+            Vorstellungen bestimmen den finalen Rahmen. Gerne erstelle ich nach einem Gespräch
+            ein maßgeschneidertes Angebot.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Gestaltest du auch andere Events?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Neben Hochzeiten realisiere ich ausgewählte private und geschäftliche Events
+            mit dem gleichen Anspruch an Ästhetik und Detail.
+          </p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="faq-item">
-      <h4>Arbeitet ihr deutschlandweit?</h4>
-      <p>Ja, wir realisieren Projekte bundesweit.</p>
-    </div>
   </div>
 </section>
+
 
 <!-- STORIES -->
 <section class="section light">
   <div class="container">
-    <h2>Captured Love Stories</h2>
+  <h2>CAPTURED STORIES</h2>
 
     <div class="stories-grid">
       <img src="assets/couple.jpg">
@@ -185,19 +318,45 @@
 </section>
 
 <!-- REFERENZEN -->
-<section class="section">
+<section id="referenzen" class="section">
   <div class="container narrow">
-    <h2>Referenzen</h2>
-    <p class="testimonial">
-      „Dekoliyah hat unsere Hochzeit in ein ästhetisches Meisterwerk verwandelt.“
+    <h2>WORTE UNSERER KUNDEN</h2>
+    <p class="section-intro">
+      Jede Hochzeit ist einzigartig – genauso wie die Geschichten dahinter.
     </p>
+
+    <div class="testimonials">
+
+      <div class="testimonial">
+        <p class="quote">
+          „Dekoliyah hat unsere Erwartungen übertroffen. Jedes Detail war perfekt abgestimmt und mit so viel Liebe gestaltet.“
+        </p>
+        <p class="author">— Anna & Leon</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="quote">
+          „Von der ersten Idee bis zum letzten Handgriff – absolute Professionalität und ein unvergleichliches Gespür für Ästhetik.“
+        </p>
+        <p class="author">— Marie & David</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="quote">
+          „Unsere Hochzeit war ein Traum. Stilvoll, harmonisch und einfach wunderschön umgesetzt.“
+        </p>
+        <p class="author">— Sofia & Elias</p>
+      </div>
+
+    </div>
   </div>
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="section">
   <div class="container narrow">
-    <h2>Kontakt</h2>
+    <h2>KONTAKT</h2>
 
     <form action="#" class="contact-form">
       <input type="text" placeholder="Name" required>
