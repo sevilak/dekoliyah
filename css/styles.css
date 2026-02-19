@@ -1,3 +1,87 @@
+/* =========================
+   ENVELOPE OVERLAY
+========================= */
+
+.envelope-overlay {
+  position: fixed;
+  inset: 0;
+  background: #f3efe9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease;
+}
+
+/* Umschlag Container */
+.envelope {
+  position: relative;
+  width: 420px;
+  height: 280px;
+  perspective: 1200px;
+}
+
+/* Basis */
+.envelope-base {
+  position: absolute;
+  inset: 0;
+  background: url("../assets/envelope_base.png") center/cover no-repeat;
+  filter: drop-shadow(0 25px 40px rgba(0,0,0,0.08));
+}
+
+/* Klappe */
+.envelope-flap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: url("../assets/envelope_flap.png") center/cover no-repeat;
+  transform-origin: top center;
+  transition: transform 1.4s cubic-bezier(.65,.05,.36,1);
+}
+
+/* Siegel */
+.open-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+ 
+}
+
+/* Button */
+.open-btn {
+
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+/* Animation State */
+.envelope-overlay.open .envelope-flap {
+  transform: rotateX(-20deg);
+}
+
+.envelope-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 :root {
   --light: #f7f7f7;
   --text: #111;

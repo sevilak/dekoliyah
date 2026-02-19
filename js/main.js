@@ -89,3 +89,18 @@ faqItems.forEach(item => {
     item.classList.toggle("active");
   });
 });
+
+const overlay = document.getElementById("envelopeOverlay");
+const openBtn = document.querySelector(".open-btn");
+
+openBtn.addEventListener("click", () => {
+  overlay.classList.add("open");
+
+  setTimeout(() => {
+    overlay.classList.add("fade-out");
+  }, 1600);
+
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 2400);
+});
