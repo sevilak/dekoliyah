@@ -719,6 +719,7 @@ h3 {
   font-weight: 300;
   line-height: 1.9;
   color: #555;
+    
 }
 
 /* GRID */
@@ -776,6 +777,34 @@ h3 {
   font-size: 1.2rem;
   font-weight: 300;
   cursor: pointer;
+}
+
+.service-details {
+  max-height: 0;
+
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.service-card.active .service-details {
+  
+  
+  margin-top: 20px;
+}
+
+.service-details p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.plus {
+  transition: transform 0.4s ease;
+  font-size: 1.2rem;
+}
+
+.service-card.active .plus {
+  transform: rotate(45deg);
 }
 
 /* RESPONSIVE */

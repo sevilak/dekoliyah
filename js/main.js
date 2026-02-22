@@ -90,17 +90,34 @@ faqItems.forEach(item => {
   });
 });
 
-const overlay = document.getElementById("envelopeOverlay");
-const openBtn = document.querySelector(".open-btn");
 
-openBtn.addEventListener("click", () => {
-  overlay.classList.add("open");
 
-  setTimeout(() => {
-    overlay.classList.add("fade-out");
-  }, 1600);
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("#services .service-card");
 
-  setTimeout(() => {
-    overlay.style.display = "none";
-  }, 2400);
+  cards.forEach(card => {
+    const footer = card.querySelector(".service-footer");
+    const details = card.querySelector(".service-details");
+
+    footer.addEventListener("click", () => {
+      const isOpen = card.classList.contains("active");
+
+      // alle schließen
+      cards.forEach(c => {
+        c.classList.remove("active");
+        const d = c.querySelector(".service-details");
+        d.style.maxHeight = null;
+        c.querySelector(".service-footer").setAttribute("aria-expanded", "false");
+        d.setAttribute("aria-hidden", "true");
+      });
+
+      // wenn vorher geschlossen → öffnen
+      if (!isOpen) {
+        card.classList.add("active");
+        details.style.maxHeight = details.scrollHeight + "px";
+        footer.setAttribute("aria-expanded", "true");
+        details.setAttribute("aria-hidden", "false");
+      }
+    });
+  });
 });
