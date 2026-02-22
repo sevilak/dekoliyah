@@ -161,24 +161,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".contact-form");
   if (!form) return;
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
+
     if (!form.checkValidity()) {
       alert("Bitte fülle alle erforderlichen Felder korrekt aus.");
       return;
     }
 
-    // Erfolgsmeldung erzeugen
-    const success = document.createElement("div");
-    success.className = "form-success";
-    success.innerHTML = "Vielen Dank 🤍 – ich melde mich schnellstmöglich bei euch!";
-    form.after(success);
+    const formData = new FormData(form);
 
-    // Formular zurücksetzen
-    form.reset();
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
 
-    // Meldung nach ein paar Sekunden wieder ausblenden
-    setTimeout(() => success.remove(), 6000);
+      if (response.ok) {
+        const success = document.createElement("div");
+        success.classList.add("form-success");
+        success.innerHTML = "Vielen Dank 🤍 Ich melde mich schnellstmöglich bei euch.";
+        form.after(success);
+
+        form.reset();
+
+        setTimeout(() => success.remove(), 6000);
+      } else {
+        alert("Fehler beim Senden. Bitte erneut versuchen.");
+      }
+    } catch (error) {
+      alert("Netzwerkfehler. Bitte später erneut versuchen.");
+    }
   });
 });
-
