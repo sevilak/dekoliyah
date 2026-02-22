@@ -366,12 +366,13 @@ h3 {
   margin-top: 30px;
   padding: 14px 40px;
   border: 1px solid #000;
-  background: transparent;
+  background: black;
   font-size: 0.8rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #c5a880;
 }
 
 .contact-form button:hover {
