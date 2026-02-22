@@ -90,6 +90,17 @@ faqItems.forEach(item => {
   });
 });
 
+const form = document.querySelector(".contact-form");
+
+form.addEventListener("submit", function(e) {
+
+  if (!form.checkValidity()) {
+    e.preventDefault();
+    alert("Bitte fülle alle Pflichtfelder korrekt aus.");
+  }
+
+});
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -121,3 +132,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// =============================
+// WEITERLESEN-FUNKTION NUR FÜR TESTIMONIALS
+// =============================
+document.addEventListener("DOMContentLoaded", () => {
+  const quotes = document.querySelectorAll("#referenzen .quote.truncate");
+  quotes.forEach((el) => {
+    // Falls Text länger als sichtbarer Bereich ist
+    if (el.scrollHeight > el.clientHeight + 10) {
+      const btn = document.createElement("button");
+      btn.className = "read-more";
+      btn.textContent = "Weiterlesen";
+      el.after(btn);
+
+      btn.addEventListener("click", () => {
+        const expanded = el.classList.toggle("expanded");
+        btn.textContent = expanded ? "Weniger anzeigen" : "Weiterlesen";
+      });
+    }
+  });
+});
+
+// ==============================
+// FORMULAR-FEEDBACK
+// ==============================
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      alert("Bitte fülle alle erforderlichen Felder korrekt aus.");
+      return;
+    }
+
+    // Erfolgsmeldung erzeugen
+    const success = document.createElement("div");
+    success.className = "form-success";
+    success.innerHTML = "Vielen Dank 🤍 – ich melde mich schnellstmöglich bei euch!";
+    form.after(success);
+
+    // Formular zurücksetzen
+    form.reset();
+
+    // Meldung nach ein paar Sekunden wieder ausblenden
+    setTimeout(() => success.remove(), 6000);
+  });
+});
+
